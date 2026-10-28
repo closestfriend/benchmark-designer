@@ -7,7 +7,7 @@ description: Design, red-team, and ship rigorous evaluation suites, benchmarks, 
 
 ## The one fact that should reorganize how you build this
 
-Zhu et al. audited ten widely-used agentic benchmarks against a validity checklist and found **none satisfied every criterion**; flaws moved reported performance by up to 100% in relative terms. A trivial agent that returns empty responses scores **38% on τ-bench airline — beating a GPT-4o agent at 35%**, because 38% of those tasks are intentionally unsolvable and doing nothing passes them. An agent could score **100% on SWE-Lancer** without resolving anything. BenchJack later automated the attack and drove **9 of 10** benchmarks (SWE-bench Verified, MLE-Bench, Terminal-Bench, OSWorld, WebArena, AgentBench and others) to near-perfect scores **without solving a single task**.
+Zhu et al. audited ten widely-used agentic benchmarks against a validity checklist and found **none satisfied every criterion**; flaws moved reported performance by up to 100% in relative terms. A trivial agent that returns empty responses scores **38% on τ-bench airline — beating a GPT-4o agent at 35%**, because 38% of those tasks are intentionally unsolvable and doing nothing passes them. An agent could score **100% on SWE-Lancer** without resolving anything. BenchJack later automated the attack and drove **9 of 10** benchmarks (SWE-bench Verified, MLE-Bench, Terminal-Bench, OSWorld, WebArena and others) to near-perfect scores **without solving a single task**.
 
 These are not sloppy side projects. They are the field's reference benchmarks, built by strong teams.
 

@@ -17,7 +17,7 @@
 
 ## 1. The two validities
 
-From Zhu et al., *Establishing Best Practices in Building Rigorous Agentic Benchmarks* (NeurIPS 2025 D&B, [arXiv:2507.02825](https://arxiv.org/abs/2507.02825)), quoted:
+From Zhu et al., *Establishing Best Practices for Building Rigorous Agentic Benchmarks* (NeurIPS 2025 D&B, [arXiv:2507.02825](https://arxiv.org/abs/2507.02825)), quoted:
 
 - **Task validity** — "a task should be solvable if and only if the agent possesses the target capability."
 - **Outcome validity** — "the evaluation result (e.g., tests or checks) truly indicates task success."
