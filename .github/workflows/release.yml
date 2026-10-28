@@ -1,0 +1,22 @@
+name: release
+
+# Builds benchmark-designer.skill from the tagged tree and attaches it to the release.
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git archive --format=zip --prefix=benchmark-designer/ -o benchmark-designer.skill HEAD \
+            SKILL.md README.md LICENSE references scripts assets
+      - run: gh release upload "${{ github.event.release.tag_name }}" benchmark-designer.skill --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
