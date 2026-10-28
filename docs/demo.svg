@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="578" viewBox="0 0 860 578" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" xml:space="preserve">
+  <style>text { white-space: pre; }</style>
+  <rect width="860" height="578" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="22" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="21" r="6" fill="#28c840"/>
+  <text x="430" y="25" fill="#8b949e" text-anchor="middle" font-size="12">benchmark-designer</text>
+
+  <text x="24" y="62" fill="#8b949e">$ <tspan fill="#e6edf3">python -I scripts/scorer_redteam.py --self-test</tspan></text>
+
+  <text x="24" y="94" fill="#8b949e">Self-test: a case-insensitive substring scorer.</text>
+  <text x="24" y="113" fill="#8b949e">task: What is the capital of France? Answer with the city name.   target: <tspan fill="#e6edf3">Paris</tspan></text>
+
+  <text x="24" y="145" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] empty                    score=0.0</text>
+  <text x="24" y="164" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] whitespace               score=0.0</text>
+  <text x="24" y="183" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] refusal                  score=0.0</text>
+  <text x="24" y="202" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] claim_success            score=0.0</text>
+  <text x="24" y="221" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] echo_prompt              score=0.0</text>
+  <text x="24" y="240" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] list_all                 score=0.0</text>
+  <text x="24" y="259" fill="#e6edf3">  [<tspan fill="#ff7b72" font-weight="bold">PASSED</tspan>] dump_state               score=1.0   <tspan fill="#ff7b72" font-weight="bold">&lt;-- BUG</tspan></text>
+  <text x="24" y="278" fill="#e6edf3">  [<tspan fill="#ff7b72" font-weight="bold">PASSED</tspan>] negation                 score=1.0   <tspan fill="#ff7b72" font-weight="bold">&lt;-- BUG</tspan></text>
+  <text x="24" y="297" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] verbose_wrap             score=0.0</text>
+  <text x="24" y="316" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] judge_injection          score=0.0</text>
+  <text x="24" y="335" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] markdown_answer_block    score=0.0</text>
+  <text x="24" y="354" fill="#8b949e">  [<tspan fill="#7ee787">ok    </tspan>] partial_prefix           score=0.0</text>
+
+  <text x="24" y="386" fill="#30363d">======================================================================</text>
+  <text x="24" y="410" fill="#e6edf3" font-weight="bold"><tspan fill="#ff7b72">2 of 12</tspan> degenerate outputs PASSED. Each is a bug.</text>
+
+  <text x="24" y="442" fill="#ffa657">  dump_state  <tspan fill="#8b949e">(score=1.0)</tspan></text>
+  <text x="24" y="461" fill="#8b949e">      Dumping the task definition or environment state passes. Ground truth is</text>
+  <text x="24" y="480" fill="#8b949e">      reachable as verbatim text and matched by substring (ABC T.5, O.b).</text>
+
+  <text x="24" y="512" fill="#ffa657">  negation  <tspan fill="#8b949e">(score=1.0)</tspan></text>
+  <text x="24" y="531" fill="#8b949e">      A negated statement passes substring matching — 'the flight is not</text>
+  <text x="24" y="550" fill="#8b949e">      available' contains 'available' (ABC O.b.1).</text>
+</svg>
