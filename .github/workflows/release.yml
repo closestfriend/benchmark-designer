@@ -13,7 +13,7 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: |
           git archive --format=zip --prefix=benchmark-designer/ -o benchmark-designer.skill HEAD \
             SKILL.md README.md LICENSE references scripts assets
