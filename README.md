@@ -2,7 +2,7 @@
 
 An agent skill for designing, red-teaming, and reporting evaluations of AI models and agents. Ask your agent for an eval and it works verifier-first: write the claim, design the scorer, attack the scorer with degenerate outputs, calibrate against a null agent, then scale with power analysis choosing `n`.
 
-Works in Claude Code, the Claude apps, and any agent that reads `SKILL.md`.
+Works in any agent or harness that reads `SKILL.md` (Claude Code, OpenCode, Codex, Cursor, and GUI apps).
 
 ![scorer_redteam.py running its self-test: a substring scorer passes on a state dump and on a negated answer, and both are flagged as bugs](docs/demo.svg)
 
@@ -40,13 +40,13 @@ A smoke test gets deterministic checks and one oracle solution. A published benc
 npx skills add closestfriend/benchmark-designer
 ```
 
-Or clone it into your skills directory:
+Or clone it into your agent's skills directory (e.g., `~/.claude/skills/`, `~/.opencode/skills/`, or `.agents/skills/`):
 
 ```bash
 git clone https://github.com/closestfriend/benchmark-designer ~/.claude/skills/benchmark-designer
 ```
 
-For the Claude apps, download `benchmark-designer.skill` from the [latest release](https://github.com/closestfriend/benchmark-designer/releases/latest) and upload it as a custom skill in Claude's settings.
+For GUI and web apps that take packaged skill bundles (like the Claude apps), download `benchmark-designer.skill` from the [latest release](https://github.com/closestfriend/benchmark-designer/releases/latest) and upload it in your settings.
 
 ## Use
 
