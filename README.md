@@ -132,7 +132,6 @@ Every number in the skill traces to [`references/sources.md`](references/sources
 
 ## More skills
 
-- [grand-tour](https://github.com/closestfriend/grand-tour): an architectural walkthrough and explain-it-back quiz over a codebase
 - [slop-score-skill](https://github.com/closestfriend/slop-score-skill): Sam Paech's Slop Score for flagging synthetic writing patterns
 - [epistemic-skills](https://github.com/closestfriend/epistemic-skills): authoring laws, a linter, and a claim-verification harness for agent skills
 
